@@ -20,14 +20,18 @@ kubectl apply -f srcs/mysql/srcs/mysql.yaml
 
 # wordpress setup
 docker build -t wordpress_image srcs/wordpress
-kubectl apply -f srcs/wordpress
+kubectl apply -f srcs/wordpress/wordpress.yaml
 
 # phpMyAdmin setup
 docker build -t phpmyadmin_image srcs/phpMyAdmin
-kubectl apply -f srcs/phpMyAdmin
+kubectl apply -f srcs/phpMyAdmin/phpMyAdmin.yaml
 
 # ftps setup
 docker build -t ftps_image srcs/ftps
-kubectl apply -f srcs/ftps
+kubectl apply -f srcs/ftps/ftps.yaml
+
+# influxDB setup
+docker build -t influxdb_image srcs/influxdb
+kubectl apply -f srcs/influxdb/influxdb.yaml
 
 minikube dashboard
