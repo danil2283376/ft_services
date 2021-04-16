@@ -5,6 +5,8 @@ minikube stop
 minikube delete
 minikube start --vm-driver=virtualbox --cpus=4 --memory=4G --disk-size=50G
 eval $(minikube docker-env)
+docker pull metallb/speaker:v0.8.2
+docker pull metallb/controller:v0.8.2
 minikube addons enable metallb
 kubectl apply -f configmap.yaml
 
@@ -21,7 +23,11 @@ docker build -t wordpress_image srcs/wordpress
 kubectl apply -f srcs/wordpress
 
 # phpMyAdmin setup
-docker build -t phpMyAdmin_image srcs/phpMyAdmin
+docker build -t phpmyadmin_image srcs/phpMyAdmin
 kubectl apply -f srcs/phpMyAdmin
+
+# ftps setup
+docker build -t ftps_image srcs/ftps
+kubectl apply -f srcs/ftps
 
 minikube dashboard
