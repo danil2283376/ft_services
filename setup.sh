@@ -16,7 +16,7 @@ kubectl apply -f srcs/nginx/nginx.yaml
 
 # mysql setup
 docker build -t mysql_image srcs/mysql
-kubectl apply -f srcs/mysql/srcs/mysql.yaml
+kubectl apply -f srcs/mysql/mysql.yaml
 
 # wordpress setup
 docker build -t wordpress_image srcs/wordpress
