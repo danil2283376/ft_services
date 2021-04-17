@@ -1,3 +1,4 @@
+
 FROM	alpine:3.12
 
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories
@@ -10,11 +11,11 @@ RUN apk add telegraf
 RUN openrc
 RUN touch /run/openrc/softlevel
 
-# COPY	./srcs/telegraf.conf /etc/
-COPY	./srcs/start_influx.sh /
+COPY	./srcs/telegraf.conf /etc/
+COPY	./srcs/start.sh /
 
 VOLUME ["/var/lib/influxdb"]
 
-EXPOSE 8086
+EXPOSE	8086
 
-ENTRYPOINT sh start_influx.sh
+ENTRYPOINT sh start.sh
