@@ -1,9 +1,9 @@
 <?php
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'Danya_Docker' );
+define( 'DB_NAME', 'users_wordpress' );
 
 /** MySQL database username */
-define( 'DB_USER', 'Senior' );
+define( 'DB_USER', 'scolen' );
 
 /** MySQL database password */
 define( 'DB_PASSWORD', 'qwerty' );

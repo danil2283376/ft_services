@@ -6,7 +6,7 @@ RUN		apk add mariadb mariadb-client supervisor \
 
 COPY	./srcs/supervisor.conf /etc/supervisord.conf
 COPY 	./srcs/telegraf.conf /etc/telegraf/
-COPY	./srcs/my.cnf			/etc/
+COPY	./srcs/configuration_sql.cnf			/etc/
 COPY	./srcs/wordpress.sql		/
 COPY	./srcs/setup_database.sh		/
 

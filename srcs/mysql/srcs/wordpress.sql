@@ -65,7 +65,7 @@ CREATE TABLE `wp_comments` (
 
 INSERT INTO `wp_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, `comment_author_email`, `comment_author_url`, `comment_author_IP`, `comment_date`, `comment_date_gmt`, `comment_content`, `comment_karma`, `comment_approved`, `comment_agent`, `comment_type`, `comment_parent`, `user_id`) VALUES
 (1, 1, 'A WordPress Commenter', 'wapuu@wordpress.example', 'https://wordpress.org/', '', '2021-04-01 10:27:44', '2021-04-01 10:27:44', 'Hi, this is a comment.\nTo get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\nCommenter avatars come from <a href=\"https://gravatar.com\">Gravatar</a>.', 0, '1', '', 'comment', 0, 0),
-(2, 7, 'Melisha', 'ferbsonia@gmail.com', 'http://192.168.99.104:5050', '172.17.0.1', '2021-04-01 10:40:53', '2021-04-01 10:40:53', 'https://github.com/Melisha21', 0, '1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36', 'comment', 0, 1);
+(2, 7, 'Scolen', 'ferbsonia@gmail.com', 'http://192.168.99.104:5050', '172.17.0.1', '2021-04-01 10:40:53', '2021-04-01 10:40:53', 'https://github.com/Scolen21', 0, '1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36', 'comment', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -109,7 +109,7 @@ CREATE TABLE `wp_options` (
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 (1, 'siteurl', 'http://192.168.99.104:5050', 'yes'),
 (2, 'home', 'http://192.168.99.104:5050', 'yes'),
-(3, 'blogname', 'wp-melisha', 'yes'),
+(3, 'blogname', 'wp-Scolen', 'yes'),
 (4, 'blogdescription', 'Just another WordPress site', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
 (6, 'admin_email', 'ferbsonia@gmail.com', 'yes'),
@@ -324,8 +324,8 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (2, 1, '2021-04-01 10:27:44', '2021-04-01 10:27:44', '<!-- wp:paragraph -->\n<p>This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>...or something like this:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:quote -->\n<blockquote class=\"wp-block-quote\"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n<!-- /wp:quote -->\n\n<!-- wp:paragraph -->\n<p>As a new WordPress user, you should go to <a href=\"http://192.168.99.104:5050/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n<!-- /wp:paragraph -->', 'Sample Page', '', 'publish', 'closed', 'open', '', 'sample-page', '', '', '2021-04-01 10:27:44', '2021-04-01 10:27:44', '', 0, 'http://192.168.99.104:5050/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2021-04-01 10:27:44', '2021-04-01 10:27:44', '<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Our website address is: http://192.168.99.104:5050.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comments</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Media</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Embedded content from other websites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where we send your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph -->', 'Privacy Policy', '', 'draft', 'closed', 'open', '', 'privacy-policy', '', '', '2021-04-01 10:27:44', '2021-04-01 10:27:44', '', 0, 'http://192.168.99.104:5050/?page_id=3', 0, 'page', '', 0),
 (4, 1, '2021-04-01 10:28:46', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2021-04-01 10:28:46', '0000-00-00 00:00:00', '', 0, 'http://192.168.99.104:5050/?p=4', 0, 'post', '', 0),
-(5, 1, '2021-04-01 10:37:36', '2021-04-01 10:37:36', '<!-- wp:paragraph -->\n<p>My git - https://github.com/Melisha21</p>\n<!-- /wp:paragraph -->', 'Melisha', '', 'publish', 'closed', 'closed', '', 'melisha', '', '', '2021-04-01 10:37:36', '2021-04-01 10:37:36', '', 0, 'http://192.168.99.104:5050/?page_id=5', 0, 'page', '', 0),
-(6, 1, '2021-04-01 10:37:36', '2021-04-01 10:37:36', '<!-- wp:paragraph -->\n<p>My git - https://github.com/Melisha21</p>\n<!-- /wp:paragraph -->', 'Melisha', '', 'inherit', 'closed', 'closed', '', '5-revision-v1', '', '', '2021-04-01 10:37:36', '2021-04-01 10:37:36', '', 5, 'http://192.168.99.104:5050/?p=6', 0, 'revision', '', 0),
+(5, 1, '2021-04-01 10:37:36', '2021-04-01 10:37:36', '<!-- wp:paragraph -->\n<p>My git - https://github.com/Scolen21</p>\n<!-- /wp:paragraph -->', 'Scolen', '', 'publish', 'closed', 'closed', '', 'Scolen', '', '', '2021-04-01 10:37:36', '2021-04-01 10:37:36', '', 0, 'http://192.168.99.104:5050/?page_id=5', 0, 'page', '', 0),
+(6, 1, '2021-04-01 10:37:36', '2021-04-01 10:37:36', '<!-- wp:paragraph -->\n<p>My git - https://github.com/Scolen21</p>\n<!-- /wp:paragraph -->', 'Scolen', '', 'inherit', 'closed', 'closed', '', '5-revision-v1', '', '', '2021-04-01 10:37:36', '2021-04-01 10:37:36', '', 5, 'http://192.168.99.104:5050/?p=6', 0, 'revision', '', 0),
 (7, 1, '2021-04-01 10:40:21', '2021-04-01 10:40:21', '', 'Subscribe to admin', '', 'publish', 'open', 'open', '', 'subscribe-to-admin', '', '', '2021-04-01 10:40:21', '2021-04-01 10:40:21', '', 0, 'http://192.168.99.104:5050/?p=7', 0, 'post', '', 1),
 (8, 1, '2021-04-01 10:40:21', '2021-04-01 10:40:21', '', 'Subscribe to admin', '', 'inherit', 'closed', 'closed', '', '7-revision-v1', '', '', '2021-04-01 10:40:21', '2021-04-01 10:40:21', '', 7, 'http://192.168.99.104:5050/?p=8', 0, 'revision', '', 0);
 
@@ -422,7 +422,7 @@ CREATE TABLE `wp_usermeta` (
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
-(1, 1, 'nickname', 'Melisha'),
+(1, 1, 'nickname', 'Scolen'),
 (2, 1, 'first_name', ''),
 (3, 1, 'last_name', ''),
 (4, 1, 'description', ''),
@@ -439,9 +439,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (15, 1, 'show_welcome_panel', '1'),
 (16, 1, 'session_tokens', 'a:1:{s:64:\"5bbc6b108c0913b0b04fda7024db219e0255419db1fed4466e34bb7e3777e968\";a:4:{s:10:\"expiration\";i:1618482486;s:2:\"ip\";s:10:\"172.17.0.1\";s:2:\"ua\";s:121:\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36\";s:5:\"login\";i:1617272886;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '4'),
-(18, 2, 'nickname', 'melisha21'),
-(19, 2, 'first_name', 'Moaning'),
-(20, 2, 'last_name', 'Elisha'),
+(18, 2, 'nickname', 'Scolen21'),
+(19, 2, 'first_name', 'Spawn'),
+(20, 2, 'last_name', 'Colen'),
 (21, 2, 'description', ''),
 (22, 2, 'rich_editing', 'true'),
 (23, 2, 'syntax_highlighting', 'true'),
@@ -453,9 +453,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (29, 2, 'wp_capabilities', 'a:1:{s:10:\"subscriber\";b:1;}'),
 (30, 2, 'wp_user_level', '0'),
 (31, 2, 'dismissed_wp_pointers', ''),
-(46, 4, 'nickname', 'melisha4'),
-(47, 4, 'first_name', 'Moaning'),
-(48, 4, 'last_name', 'Elisha'),
+(46, 4, 'nickname', 'Scolen4'),
+(47, 4, 'first_name', 'Spawn'),
+(48, 4, 'last_name', 'Colen'),
 (49, 4, 'description', ''),
 (50, 4, 'rich_editing', 'true'),
 (51, 4, 'syntax_highlighting', 'true'),
@@ -467,9 +467,9 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (57, 4, 'wp_capabilities', 'a:1:{s:10:\"subscriber\";b:1;}'),
 (58, 4, 'wp_user_level', '0'),
 (59, 4, 'dismissed_wp_pointers', ''),
-(60, 5, 'nickname', 'melisha12'),
-(61, 5, 'first_name', 'Moaning'),
-(62, 5, 'last_name', 'Elisha'),
+(60, 5, 'nickname', 'Scolen12'),
+(61, 5, 'first_name', 'Spawn'),
+(62, 5, 'last_name', 'Colen'),
 (63, 5, 'description', ''),
 (64, 5, 'rich_editing', 'true'),
 (65, 5, 'syntax_highlighting', 'true'),
@@ -506,10 +506,10 @@ CREATE TABLE `wp_users` (
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'Melisha', '$P$Boil5sH5DK5lBsfa94QTyGtCs0iOKb1', 'melisha', 'ferbsonia@gmail.com', 'http://192.168.99.104:5050', '2021-04-01 10:27:44', '', 0, 'Melisha'),
-(2, 'melisha21', '$P$B3NklMpzUaxkI7UrW0kYFhVJaCvn6c/', 'melisha21', 'melisha21@student.21-school.ru', 'https://github.com/Melisha21', '2021-04-01 10:31:27', '1617273087:$P$BMaMgbzzyACUCAy8wpzrQUMs7LKDL8.', 0, 'Moaning Elisha'),
-(4, 'melisha4', '$P$Bg.ic.YR2Zy90f7rXeqIf4m1l3e9EL.', 'melisha4', 'melisha4@student.21-school.ru', 'https://github.com/Melisha21', '2021-04-01 10:32:53', '1617273173:$P$Bx9cNnyrEkv.6xgZkl5gPEU74fr/Ey1', 0, 'Moaning Elisha'),
-(5, 'melisha12', '$P$BHovBeg76Wrb9NfWms8jtKCiFyq0Cy0', 'melisha12', 'melisha12@student.21-school.ru', 'https://github.com/Melisha21', '2021-04-01 10:33:29', '1617273209:$P$B7OcizwD.WUS23mtvbpuKd/7ij/7A9.', 0, 'Moaning Elisha');
+(1, 'Scolen', '$P$Boil5sH5DK5lBsfa94QTyGtCs0iOKb1', 'Scolen', 'ferbsonia@gmail.com', 'http://192.168.99.104:5050', '2021-04-01 10:27:44', '', 0, 'Scolen'),
+(2, 'Scolen21', '$P$B3NklMpzUaxkI7UrW0kYFhVJaCvn6c/', 'Scolen21', 'Scolen21@student.21-school.ru', 'https://github.com/Scolen21', '2021-04-01 10:31:27', '1617273087:$P$BMaMgbzzyACUCAy8wpzrQUMs7LKDL8.', 0, 'Spawn Colen'),
+(4, 'Scolen4', '$P$Bg.ic.YR2Zy90f7rXeqIf4m1l3e9EL.', 'Scolen4', 'Scolen4@student.21-school.ru', 'https://github.com/Scolen21', '2021-04-01 10:32:53', '1617273173:$P$Bx9cNnyrEkv.6xgZkl5gPEU74fr/Ey1', 0, 'Spawn Colen'),
+(5, 'Scolen12', '$P$BHovBeg76Wrb9NfWms8jtKCiFyq0Cy0', 'Scolen12', 'Scolen12@student.21-school.ru', 'https://github.com/Scolen21', '2021-04-01 10:33:29', '1617273209:$P$B7OcizwD.WUS23mtvbpuKd/7ij/7A9.', 0, 'Spawn Colen');
 
 --
 -- Индексы сохранённых таблиц

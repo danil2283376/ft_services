@@ -3,8 +3,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: influxdb-svc
-  name: influxdb-svc
+    app: influxdb
+  name: influxdb
 spec:
   ports:
   - port: 8086
@@ -17,8 +17,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: influxdb-deployment
-  name: influxdb-deployment
+    app: influxdb
+  name: influxdb
 spec:
   replicas: 1
   selector:
