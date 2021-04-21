@@ -13,7 +13,7 @@ server {
         try_files $uri $uri/ =404;
     }
     location /wordpress {
-        return 307 http://192.168.99.104:5050/;
+        return 307 http://192.168.99.150:5050/;
     }
     location ~ \/phpmyadmin {
         rewrite ^/phpmyadmin(/.*)$ $1 break;
@@ -22,9 +22,6 @@ server {
         proxy_set_header Host               $host;
         proxy_set_header X-Forwarded-Proto  https;
         proxy_pass                          http://$host:5000;
-    }
-    location ~ \/index.php {
-        return 301   http://$host/phpmyadmin/;
     }
     rewrite ^([^.]*[^/])$ $1/ permanent;
 }

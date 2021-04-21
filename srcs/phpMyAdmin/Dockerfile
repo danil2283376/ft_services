@@ -9,7 +9,7 @@ RUN		apk add wget php7 php7-fpm php7-mysqli php7-mbstring php7-json php7-session
 
 RUN 	apk add nginx supervisor
 
-# COPY    ./srcs/telegraf.conf /etc/telegraf/
+COPY    ./srcs/telegraf.conf /etc/telegraf/
 COPY	/srcs/supervisor.conf		/etc/supervisord.conf
 COPY	/srcs/config.inc.php		/www/phpmyadmin/
 COPY	./srcs/nginx.conf 			/etc/nginx/conf.d/default.conf

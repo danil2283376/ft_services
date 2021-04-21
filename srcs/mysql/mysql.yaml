@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: mysql
-  name: mysql-svc
+  name: mysql
 spec:
   ports:
   - port: 3306
@@ -23,12 +23,12 @@ spec:
   - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mysql-deployment
+  name: mysql
   labels:
     app: mysql
 spec:

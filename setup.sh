@@ -8,6 +8,7 @@ eval $(minikube docker-env)
 # docker pull metallb/speaker:v0.8.2
 # docker pull metallb/controller:v0.8.2
 minikube addons enable metallb
+minikube addons enable metrics-server
 kubectl apply -f configmap.yaml
 
 # nginx setup

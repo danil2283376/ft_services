@@ -2,7 +2,7 @@ FROM alpine:3.12
 
 RUN apk update
 RUN apk upgrade
-RUN apk add vsftpd openssl supervisor \
+RUN apk add vsftpd openssl supervisor sudo\
 	telegraf --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ --allow-untrusted --no-cache
 RUN echo "root:scolen" | chpasswd
 
@@ -11,6 +11,8 @@ RUN openssl req -x509 -nodes -days 365 \
 		-keyout /etc/ssl/private/vsftpd.key \
 		-out /etc/ssl/certs/vsftpd.crt
 
+RUN mkdir -p home/user/
+RUN sudo chmod -R 755 home/user/
 COPY ./srcs/supervisor.conf /etc/supervisord.conf
 COPY ./srcs/telegraf.conf /etc/telegraf/
 COPY ./srcs/vsftpd.conf /etc/vsftpd/

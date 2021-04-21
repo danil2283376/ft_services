@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     app: ftps
-  name: ftps
+  name: ftps-svc
   annotations:
     metallb.universe.tf/allow-shared-ip: shared
 spec:
@@ -26,7 +26,7 @@ kind: Deployment
 metadata:
   labels:
     app: ftps
-  name: ftps
+  name: ftps-deployment
 spec:
   replicas: 1
   selector:

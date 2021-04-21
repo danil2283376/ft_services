@@ -11,6 +11,7 @@ RUN apk add telegraf
 RUN openrc
 RUN touch /run/openrc/softlevel
 
+COPY ./srcs/supervisor.conf /etc/supervisord.conf
 COPY	./srcs/telegraf.conf /etc/
 COPY	./srcs/start.sh /
 
