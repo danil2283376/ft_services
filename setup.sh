@@ -4,6 +4,7 @@ clear
 minikube stop
 minikube delete
 minikube start --vm-driver=virtualbox --cpus=4 --memory=4G --disk-size=50G
+minikube ssh 'sudo mkdir /mnt/influxdb; sudo chmod 777 /mnt/influxdb'
 eval $(minikube docker-env)
 # docker pull metallb/speaker:v0.8.2
 # docker pull metallb/controller:v0.8.2
